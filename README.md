@@ -1,3 +1,4 @@
+````md
 # TEAM RED — README.md
 
 # TEAM RED — Developer Motivation App 🚀
@@ -10,7 +11,7 @@ Budete pracovat jako malý development tým.
 
 ---
 
-# CÍL APLIKACE
+# 🎯 CÍL APLIKACE
 
 Vaše aplikace musí:
 
@@ -23,7 +24,7 @@ Vaše aplikace musí:
 
 ---
 
-# TECHNOLOGIE
+# 🛠️ TECHNOLOGIE
 
 Použijete:
 
@@ -33,118 +34,204 @@ Použijete:
 
 ---
 
-# INSTALACE
+# 📦 INSTALACE
 
 ## 1. Přepněte se na branch
 
 ```bash
 git checkout team-red
-2. Nainstalujte dependencies
+````
+
+---
+
+## 2. Nainstalujte dependencies
+
+```bash
 npm install
-3. Nainstalujte knihovnu
+```
+
+---
+
+## 3. Nainstalujte knihovnu
+
+```bash
 npx expo install expo-linear-gradient
-4. Spusťte aplikaci
+```
+
+---
+
+## 4. Spusťte aplikaci
+
+```bash
 npx expo start --go
+```
 
-Pokud QR nefunguje:
+Potom naskenujte QR kód přes Expo Go.
 
+---
+
+## Pokud QR nefunguje
+
+```bash
 npx expo start --tunnel --go
-CO MÁTE VYTVOŘIT
-1. Odstraňte základní Expo starter obsah
+```
+
+---
+
+# 📱 CO MÁTE VYTVOŘIT
+
+## 1. Odstraňte základní Expo starter obsah
 
 Upravte:
 
+```bash
 App.js
+```
 
 Odstraňte:
 
-default Expo text
-default logo
-default instructions
-2. Vytvořte nový title
+* default Expo text
+* default logo
+* default instructions
+
+---
+
+## 2. Vytvořte nový title
 
 Například:
 
+```txt
 Developer Motivation
-3. Přidejte subtitle
+```
+
+---
+
+## 3. Přidejte subtitle
 
 Například:
 
+```txt
 Small progress is still progress.
-4. Přidejte gradient background
+```
+
+---
+
+## 4. Přidejte gradient background
 
 Použijte:
 
+```js
 import { LinearGradient } from 'expo-linear-gradient';
-5. Přidejte quotes array
+```
+
+---
+
+## 5. Přidejte quotes array
 
 Například:
 
+```js
 const quotes = [
   "Every expert was once a beginner.",
   "Debugging is normal.",
   "One commit at a time.",
   "Great apps start simple."
 ];
-6. Přidejte button
+```
+
+---
+
+## 6. Přidejte button
 
 Například:
 
+```txt
 Show Motivation
-7. Po kliknutí změňte quote
+```
+
+---
+
+## 7. Po kliknutí změňte quote
 
 Použijte:
 
-useState
-random generator
-8. Přidejte moderní card
+* `useState`
+* random generator
+
+---
+
+## 8. Přidejte moderní card
 
 Card musí obsahovat:
 
-quote
-padding
-borderRadius
-shadow
-9. Přidejte podpis týmu
+* quote
+* padding
+* borderRadius
+* shadow
+
+---
+
+## 9. Přidejte podpis týmu
+
+```txt
 Designed by Team Red
-ROZDĚLENÍ PRÁCE
+```
+
+---
+
+# 👥 ROZDĚLENÍ PRÁCE
 
 Například:
 
-člověk 1 → UI
-člověk 2 → gradient
-člověk 3 → random logic
-člověk 4 → styling
+* člověk 1 → UI
+* člověk 2 → gradient
+* člověk 3 → random logic
+* člověk 4 → styling
 
 Každý musí udělat alespoň jeden commit.
 
-GIT WORKFLOW
+---
 
-Před prací:
+# 🌳 GIT WORKFLOW
 
+## Před prací
+
+```bash
 git pull origin team-red
+```
 
-Po změnách:
+---
 
+## Po změnách
+
+```bash
 git add .
 git commit -m "Add motivation feature"
 git pull origin team-red
 git push origin team-red
-BONUS — AI POVOLEN
+```
+
+---
+
+# 🤖 BONUS — AI POVOLEN
 
 Můžete používat:
 
-ChatGPT
-Gemini
-Claude
-Copilot
+* ChatGPT
+* Gemini
+* Claude
+* Copilot
 
 Profesionální vývojáři dnes AI používají běžně.
 
 Důležité:
 nejen kopírovat, ale rozumět kódu.
 
-BONUS AI PROMPT
+---
+
+# 🧠 BONUS AI PROMPT
+
+```txt
 Pomoz mi vytvořit moderní React Native Expo motivační aplikaci.
 
 Potřebuji:
@@ -156,13 +243,28 @@ Potřebuji:
 - jednoduché vysvětlení React Native komponent
 
 Vysvětluj vše jednoduše pro začátečníky.
-FINÁLNÍ PREZENTACE
+```
+
+---
+
+# 🎤 FINÁLNÍ PREZENTACE
 
 Na konci ukažte:
 
-jak aplikace funguje
-kdo dělal jakou část
-co bylo nejtěžší
-co jste se naučili
+* jak aplikace funguje
+* kdo dělal jakou část
+* co bylo nejtěžší
+* co jste se naučili
 
-Good luck 🚀
+---
+
+# 🚀 GOOD LUCK
+
+Nebojte se experimentovat.
+
+Debugging je normální součást developmentu.
+
+Každá velká aplikace začala jednoduchým prototypem.
+
+```
+```
