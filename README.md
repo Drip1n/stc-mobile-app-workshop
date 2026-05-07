@@ -1,50 +1,252 @@
-# Welcome to your Expo app 👋
+````md id="8w3jkp"
+# TEAM GREEN — README.md
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# TEAM GREEN — Daily Challenge App 🎯
 
-## Get started
+Vítejte v Team Green.
 
-1. Install dependencies
+Vaším cílem je vytvořit aplikaci s denními challenges.
 
-   ```bash
-   npm install
-   ```
+Budete pracovat jako malý development tým.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+# 🎯 CÍL APLIKACE
 
-In the output, you'll find options to open the app in a
+Vaše aplikace musí:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- zobrazovat random challenges
+- mít progress systém
+- používat FlatList
+- mít modernější UI
+- používat React Native komponenty
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+# 🛠️ TECHNOLOGIE
 
-When you're ready, run:
+Použijete:
+
+- React Native
+- Expo
+- FlatList
+- useState
+
+---
+
+# 📦 INSTALACE
+
+## 1. Přepněte se na branch
 
 ```bash
-npm run reset-project
+git checkout team-green
+````
+
+---
+
+## 2. Nainstalujte dependencies
+
+```bash id="mz2b7h"
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 3. Spusťte aplikaci
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash id="q8r5lv"
+npx expo start --go
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Potom naskenujte QR kód přes Expo Go.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+# 📱 CO MÁTE VYTVOŘIT
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 1. Odstraňte Expo starter obsah
+
+Upravte:
+
+```bash id="7f1jcx"
+App.js
+```
+
+Odstraňte:
+
+* default Expo text
+* default logo
+* default instructions
+
+---
+
+## 2. Vytvořte title
+
+Například:
+
+```txt id="s4x6nw"
+Daily Challenge App
+```
+
+---
+
+## 3. Přidejte challenges array
+
+Například:
+
+```js id="c7ut9z"
+const challenges = [
+  "Push one Git commit",
+  "Learn one shortcut",
+  "Help teammate",
+  "Fix one bug"
+];
+```
+
+---
+
+## 4. Použijte FlatList
+
+Zobrazte challenges pomocí:
+
+* FlatList
+
+---
+
+## 5. Přidejte completed systém
+
+Použijte:
+
+* useState
+
+Po kliknutí:
+
+* challenge označte jako completed
+
+Například:
+
+* změna barvy
+* checkmark
+* opacity
+
+---
+
+## 6. Přidejte progress text
+
+Například:
+
+```txt id="7n0f5m"
+2 / 4 challenges completed
+```
+
+---
+
+## 7. Přidejte modernější design
+
+Upravte:
+
+* cards
+* spacing
+* colors
+* button style
+* text styles
+
+---
+
+## 8. Přidejte podpis týmu
+
+```txt id="t5k9qa"
+Improved by Team Green
+```
+
+---
+
+# 👥 ROZDĚLENÍ PRÁCE
+
+Například:
+
+* člověk 1 → FlatList
+* člověk 2 → completed logic
+* člověk 3 → progress systém
+* člověk 4 → styling
+
+Každý musí udělat alespoň jeden commit.
+
+---
+
+# 🌳 GIT WORKFLOW
+
+## Před prací
+
+```bash id="n2q8yh"
+git pull origin team-green
+```
+
+---
+
+## Po změnách
+
+```bash id="g5m1sx"
+git add .
+git commit -m "Add daily challenge app"
+git pull origin team-green
+git push origin team-green
+```
+
+---
+
+# 🤖 BONUS — AI POVOLEN
+
+Můžete používat:
+
+* ChatGPT
+* Gemini
+* Claude
+* Copilot
+
+Profesionální vývojáři dnes AI používají běžně.
+
+Důležité:
+nejen kopírovat, ale rozumět kódu.
+
+---
+
+# 🧠 BONUS AI PROMPT
+
+```txt id="h3z7wr"
+Pomoz mi vytvořit React Native Expo aplikaci s FlatList a challenge systémem.
+
+Potřebuji:
+- FlatList
+- completed logic
+- progress counter
+- moderní mobile UI
+- vysvětlení useState
+- jednoduché vysvětlení FlatList
+
+Vysvětluj vše jednoduše pro začátečníky.
+```
+
+---
+
+# 🎤 FINÁLNÍ PREZENTACE
+
+Na konci ukažte:
+
+* jak funguje challenge systém
+* jak funguje FlatList
+* kdo dělal jakou část
+* co jste se naučili
+
+---
+
+# 🚀 GOOD LUCK
+
+Nebojte se experimentovat.
+
+Debugging a problem solving jsou normální součást developmentu.
+
+Každá velká aplikace začíná jednoduchým MVP.
+
+```
+```
