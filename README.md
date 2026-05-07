@@ -1,50 +1,355 @@
-# Welcome to your Expo app 👋
+````md
+# TEAM RED — Developer Motivation App 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Vítejte v Team Red.
 
-## Get started
+Vaším cílem je vytvořit jednoduchou motivační mobilní aplikaci pro developery.
 
-1. Install dependencies
+Budete pracovat jako malý development tým — stejně jako v reálném software development workflow.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+# 📌 CÍL WORKSHOPU
 
-   ```bash
-   npx expo start
-   ```
+Cílem není vytvořit perfektní aplikaci.
 
-In the output, you'll find options to open the app in a
+Cílem je:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- pochopit základy React Native
+- naučit se pracovat v týmu
+- používat Git workflow
+- řešit problémy jako skuteční vývojáři
+- naučit se používat AI správným způsobem
+- vytvořit funkční mobilní aplikaci
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+# 📱 CÍL APLIKACE
 
-When you're ready, run:
+Vaše aplikace musí:
+
+- zobrazovat motivační developer quotes
+- mít modernější UI než základní Expo starter
+- obsahovat tlačítko
+- měnit obsah dynamicky
+- používat React Native komponenty
+- používat alespoň jednu externí knihovnu
+
+---
+
+# 🛠️ TECHNOLOGIE
+
+Použijete:
+
+- React Native
+- Expo
+- expo-linear-gradient
+
+---
+
+# ⚙️ INSTALACE A SETUP
+
+## 1. Přepněte se na branch
 
 ```bash
-npm run reset-project
+git checkout team-red
+````
+
+---
+
+## 2. Nainstalujte dependencies
+
+```bash
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 3. Nainstalujte knihovnu
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npx expo install expo-linear-gradient
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 4. Spusťte aplikaci
 
-Join our community of developers creating universal apps.
+```bash
+npx expo start --go
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Potom naskenujte QR kód pomocí Expo Go aplikace.
+
+---
+
+## Pokud QR nefunguje
+
+```bash
+npx expo start --tunnel --go
+```
+
+---
+
+# 🎯 CO MÁTE VYTVOŘIT
+
+## 1. Odstraňte základní Expo starter obsah
+
+Upravte:
+
+```bash
+App.js
+```
+
+Odstraňte:
+
+* default Expo text
+* default logo
+* default instructions
+
+---
+
+## 2. Vytvořte nový title
+
+Například:
+
+```txt
+Developer Motivation
+```
+
+---
+
+## 3. Přidejte subtitle
+
+Například:
+
+```txt
+Small progress is still progress.
+```
+
+---
+
+## 4. Přidejte gradient background
+
+Použijte:
+
+```js
+import { LinearGradient } from 'expo-linear-gradient';
+```
+
+---
+
+## 5. Přidejte quotes array
+
+Například:
+
+```js
+const quotes = [
+  "Every expert was once a beginner.",
+  "Debugging is normal.",
+  "One commit at a time.",
+  "Great apps start simple."
+];
+```
+
+---
+
+## 6. Přidejte button
+
+Například:
+
+```txt
+Show Motivation
+```
+
+---
+
+## 7. Po kliknutí změňte quote
+
+Použijte:
+
+* useState
+* random generator
+
+---
+
+## 8. Přidejte moderní card
+
+Card musí obsahovat:
+
+* quote
+* padding
+* borderRadius
+* shadow
+
+---
+
+## 9. Přidejte podpis týmu
+
+```txt
+Designed by Team Red
+```
+
+---
+
+# 🧠 DOPORUČENÁ STRUKTURA APLIKACE
+
+Můžete použít například:
+
+```txt
+- Title
+- Subtitle
+- Quote Card
+- Button
+- Footer
+```
+
+---
+
+# 👥 ROZDĚLENÍ PRÁCE
+
+Například:
+
+* člověk 1 → UI
+* člověk 2 → gradient
+* člověk 3 → random logic
+* člověk 4 → styling
+
+Každý musí udělat alespoň jeden commit.
+
+---
+
+# 🌿 GIT WORKFLOW
+
+## Před prací
+
+```bash
+git pull origin team-red
+```
+
+---
+
+## Po změnách
+
+```bash
+git add .
+git commit -m "Add motivation feature"
+git pull origin team-red
+git push origin team-red
+```
+
+---
+
+# 🤖 AI JE POVOLENO
+
+Můžete používat:
+
+* ChatGPT
+* Gemini
+* Claude
+* Copilot
+
+Profesionální vývojáři dnes AI používají běžně.
+
+Důležité:
+Nepoužívejte AI pouze na kopírování kódu.
+
+Musíte rozumět tomu:
+
+* co kód dělá
+* proč funguje
+* co jste změnili
+
+---
+
+# 💡 BONUS AI PROMPT
+
+Můžete AI poslat například tento prompt:
+
+```txt
+Pomoz mi vytvořit moderní React Native Expo motivační aplikaci.
+
+Potřebuji:
+- gradient background
+- random quote systém
+- moderní card UI
+- button
+- vysvětlení useState
+- jednoduché vysvětlení React Native komponent
+
+Vysvětluj vše jednoduše pro začátečníky.
+```
+
+---
+
+# 🔥 BONUS ÚKOLY
+
+Pokud stihnete:
+
+* přidejte animace
+* přidejte icon library
+* přidejte dark mode
+* přidejte více quote categories
+* přidejte custom button animation
+
+---
+
+# 🚨 DŮLEŽITÉ
+
+Pokud něco nefunguje:
+
+TO JE NORMÁLNÍ.
+
+Development je neustálý problem solving.
+
+Profesionální vývojáři:
+
+* googlí
+* čtou dokumentaci
+* používají AI
+* debuggují chyby každý den
+
+---
+
+# 🧪 TIPY NA DEBUGGING
+
+Když aplikace spadne:
+
+* podívejte se do terminalu
+* čtěte error message
+* zkuste pochopit problém
+* používejte console.log()
+* ptejte se AI správným způsobem
+
+---
+
+# 📚 CO SI MÁTE ODNÉST
+
+Po workshopu byste měli chápat:
+
+* co je React Native
+* jak funguje Expo
+* jak funguje state
+* jak fungují komponenty
+* jak funguje Git workflow
+* jak funguje týmová spolupráce
+* jak AI pomáhá developerům
+
+---
+
+# 🎤 FINÁLNÍ PREZENTACE
+
+Na konci ukažte:
+
+* jak aplikace funguje
+* kdo dělal jakou část
+* co bylo nejtěžší
+* co jste se naučili
+* co byste přidali dál
+
+---
+
+# 🚀 GOOD LUCK TEAM RED
+
+```
+```
