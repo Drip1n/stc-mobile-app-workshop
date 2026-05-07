@@ -1,50 +1,266 @@
-# Welcome to your Expo app 👋
+````md id="2u3jzv"
+# TEAM BLUE — README.md
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# TEAM BLUE — Weather App ☁️
 
-## Get started
+Vítejte v Team Blue.
 
-1. Install dependencies
+Vaším cílem je vytvořit jednoduchou weather aplikaci.
 
-   ```bash
-   npm install
-   ```
+Budete pracovat jako malý development tým.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+# 🎯 CÍL APLIKACE
 
-In the output, you'll find options to open the app in a
+Vaše aplikace musí:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- zobrazovat počasí
+- používat API request
+- mít moderní UI
+- používat loading state
+- používat icon knihovnu
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+# 🛠️ TECHNOLOGIE
 
-When you're ready, run:
+Použijete:
+
+- React Native
+- Expo
+- axios
+- @expo/vector-icons
+
+---
+
+# 📦 INSTALACE
+
+## 1. Přepněte se na branch
 
 ```bash
-npm run reset-project
+git checkout team-blue
+````
+
+---
+
+## 2. Nainstalujte dependencies
+
+```bash
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 3. Nainstalujte knihovny
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install axios
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 4. Spusťte aplikaci
 
-Join our community of developers creating universal apps.
+```bash
+npx expo start --go
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Potom naskenujte QR kód přes Expo Go.
+
+---
+
+# 📱 CO MÁTE VYTVOŘIT
+
+## 1. Odstraňte Expo starter obsah
+
+Upravte:
+
+```bash
+App.js
+```
+
+Odstraňte:
+
+* default Expo text
+* default logo
+* default instructions
+
+---
+
+## 2. Vytvořte title
+
+Například:
+
+```txt
+Simple Weather App
+```
+
+---
+
+## 3. Přidejte weather card
+
+Card musí obsahovat:
+
+* city
+* weather
+* temperature
+* icon
+
+---
+
+## 4. Použijte fake weather data
+
+Například:
+
+```js
+const weather = {
+  city: "Prague",
+  temperature: "21°C",
+  condition: "Sunny"
+};
+```
+
+---
+
+## 5. Přidejte refresh button
+
+Například:
+
+```txt
+Refresh Weather
+```
+
+---
+
+## 6. Přidejte loading state
+
+Použijte:
+
+* useState
+* setTimeout
+
+Po kliknutí:
+
+* zobrazte loading text
+* po chvíli zobrazte nové data
+
+---
+
+## 7. Přidejte weather icon
+
+Použijte:
+
+* Ionicons
+* MaterialIcons
+
+---
+
+## 8. Upravte design
+
+Změňte:
+
+* colors
+* spacing
+* cards
+* button style
+
+---
+
+## 9. Přidejte podpis týmu
+
+```txt
+Built by Team Blue
+```
+
+---
+
+# 👥 ROZDĚLENÍ PRÁCE
+
+Například:
+
+* člověk 1 → weather card
+* člověk 2 → loading logic
+* člověk 3 → icons
+* člověk 4 → styling
+
+Každý musí udělat alespoň jeden commit.
+
+---
+
+# 🌳 GIT WORKFLOW
+
+## Před prací
+
+```bash
+git pull origin team-blue
+```
+
+---
+
+## Po změnách
+
+```bash
+git add .
+git commit -m "Add weather app"
+git pull origin team-blue
+git push origin team-blue
+```
+
+---
+
+# 🤖 BONUS — AI POVOLEN
+
+Můžete používat:
+
+* ChatGPT
+* Gemini
+* Claude
+* Copilot
+
+Profesionální vývojáři dnes AI používají běžně.
+
+Důležité:
+nejen kopírovat, ale rozumět kódu.
+
+---
+
+# 🧠 BONUS AI PROMPT
+
+```txt
+Pomoz mi vytvořit jednoduchou React Native Expo weather aplikaci.
+
+Potřebuji:
+- weather card
+- loading state
+- refresh button
+- weather icons
+- moderní mobile UI
+- vysvětlení useState a loading logic
+
+Vysvětluj vše jednoduše pro začátečníky.
+```
+
+---
+
+# 🎤 FINÁLNÍ PREZENTACE
+
+Na konci ukažte:
+
+* jak funguje loading state
+* jak funguje weather card
+* kdo dělal jakou část
+* co jste se naučili
+
+---
+
+# 🚀 GOOD LUCK
+
+Nebojte se experimentovat.
+
+Loading state a debugging jsou běžná součást developmentu.
+
+Každá aplikace začíná jednoduchým prototypem.
+
+```
+```
